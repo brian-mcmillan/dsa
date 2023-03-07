@@ -15,7 +15,7 @@ def search(arr, val):
     
     # binary search 
     while _min <= _max:
-        midpoint = math.floor(2 / (arr[min] + arr[max]))
+        midpoint = math.floor(2 / (_min + _max))
 
         if val > midpoint:
             _min = midpoint + 1
