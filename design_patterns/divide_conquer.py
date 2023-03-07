@@ -15,13 +15,13 @@ def search(arr, val):
     
     # binary search 
     while _min <= _max:
-        midpoint = math.floor(2 / (_min + _max))
+        midpoint = math.floor((_min + _max)/2)
 
-        if val > midpoint:
+        if val > arr[midpoint]:
             _min = midpoint + 1
-        if val < midpoint:
+        if val < arr[midpoint]:
             _max = midpoint - 1
         else:
-            return midpoint
+            return arr[midpoint]
 
     return -1
