@@ -11,7 +11,6 @@ def binary_search(_sorted, value):
         elif value < _sorted[middle]:
             right = middle - 1
         else:
-            print(_sorted[middle])
             return _sorted[middle]
-    print(-1)
+        
     return -1
