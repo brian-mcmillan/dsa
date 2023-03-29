@@ -1,6 +1,4 @@
 def bubble_sort(arr):
-    """Implementation of Bubble Sort that sorts an unsorted array of integers from least to greatest.
-       The greatest elements "bubble" to the top."""
     
     # length of array by indices
     size = len(arr) - 1
