@@ -1,6 +1,5 @@
 def bubble_sort(arr):
     
-    # length of array by indices
     size = len(arr) - 1
     
     for i in range(size):
@@ -17,8 +16,8 @@ def bubble_sort(arr):
             # swap the elements
             if arr[j] > arr[j + 1]:
                 arr[j], arr[j+1] = arr[j+1], arr[j]
-                # set swapped to True
                 swapped = True
+                
         print("PASS COMPLETE\n")
 
         # if an entire pass through (size - i) is made
