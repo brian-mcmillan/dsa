@@ -21,11 +21,11 @@ class SinglyLinkedList{
             this.tail = newNode;
         }
         this.length++;
-        return this
+        return this;
         }        
     pop() {
         if(!this.tail){
-            return undefined
+            return undefined;
         }
         var current = this.head;
         while(current.next){
@@ -41,11 +41,11 @@ class SinglyLinkedList{
             this.head = null;
             this.tail = null;
         }
-        return popped.val
+        return popped.val;
     }    
     shift() {
         if(!this.head){
-            return undefined
+            return undefined;
         } 
         shifted = this.head;
         this.head = this.head.next;
@@ -67,11 +67,11 @@ class SinglyLinkedList{
             this.head = NewNode;
         }
         this.length++;
-        return this
+        return this;
     }
     get(index) {
         if(index < 0 || index > this.length - 1){
-            return undefined
+            return undefined;
         }
         var current = this.head;
         var i = 0; 
@@ -79,19 +79,19 @@ class SinglyLinkedList{
             current = current.next;
             i++;
         }
-        return current
+        return current;
     }   
     set(value, index) {
        if(this.get(index) === undefined){
-           return false
+           return false;
        }
        var setter = this.get(index);
        setter.val = value;
-       return true
+       return true;
     } 
     insert(val, index) {
         if(index < 0 || index > this.length - 1){
-            return false
+            return false;
         }
         if(index === 0) {
             return !!this.unshift(val)
@@ -107,7 +107,7 @@ class SinglyLinkedList{
         previous.next = newNode;
         newNode.next = current; 
         this.length++;
-        return true
+        return true;
     }
     remove(index){
         if(index < 0 || index > this.length - 1){
@@ -126,7 +126,7 @@ class SinglyLinkedList{
         previous.next = after;
         this.length--;
         
-        return deleted
+        return deleted;
     }
     reverse(){
         var temp = this.head;
@@ -142,7 +142,7 @@ class SinglyLinkedList{
             temp = next;
             i++;
         } 
-        return this
+        return this;
     }
     log(){
         var arr = [];
