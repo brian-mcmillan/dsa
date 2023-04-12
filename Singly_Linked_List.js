@@ -12,7 +12,7 @@ class SinglyLinkedList{
         this.length = 0;
     }
     push(val) {
-        var newNode = new Node(val)
+        var newNode = new Node(val);
         if(!this.head){
             this.head = newNode;
             this.tail = newNode;
@@ -25,7 +25,7 @@ class SinglyLinkedList{
         }        
     pop() {
         if(!this.tail){
-            return undefined
+            return undefined;
         }
         var current = this.head;
         while(current.next){
