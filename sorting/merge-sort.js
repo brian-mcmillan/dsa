@@ -2,7 +2,6 @@ function merge(arr1, arr2){
     
     let merged = [];
     
-    
     let i = 0;
     let j = 0;
     
